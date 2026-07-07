@@ -1,3 +1,24 @@
+/* ============================
+   ORCHARD DESIGN SYSTEM
+============================ */
+
+:root{
+
+    --hero-width:min(900px,80vw);
+
+    --logo-width:500px;
+
+    --overview-width:760px;
+
+    --overview-lines:6;
+
+    --hero-height:60vh;
+
+    --button-radius:18px;
+
+    --transition:120ms;
+
+}
 * {
 	margin: 0;
 	padding: 0;
@@ -474,4 +495,99 @@ body {
 		max-height: 120px;
 		margin-bottom: 2px;
 	}
+}
+/* ============================
+   ORCHARD HERO
+============================ */
+
+#content{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    min-height:60vh;
+
+    padding:48px;
+
+}
+
+#hero{
+
+    width:var(--hero-width);
+
+    text-align:center;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+#logo{
+
+    max-width:var(--logo-width);
+
+    max-height:220px;
+
+    margin-bottom:28px;
+
+}
+
+#title{
+
+    font-size:4rem;
+
+    font-weight:700;
+
+    margin-bottom:18px;
+
+}
+
+#meta{
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+}
+
+#plot{
+
+    max-width:var(--overview-width);
+
+    font-size:1.3rem;
+
+    line-height:1.8;
+
+    text-align:center;
+
+    color:rgba(255,255,255,.88);
+
+    -webkit-line-clamp:var(--overview-lines);
+
+}
+
+#buttons{
+
+    margin-top:36px;
+
+    display:flex;
+
+    gap:20px;
+
+    justify-content:center;
+
+}
+
+.btn{
+
+    border-radius:var(--button-radius);
+
+    transition:all var(--transition);
+
 }
