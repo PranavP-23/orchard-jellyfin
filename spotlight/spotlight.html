@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Orchard Spotlight</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com" />
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="spotlight.css" />
+</head>
+
+<body>
+
+	<div id="backdrop"><img id="backdrop-img" alt="" /></div>
+	<div id="content">
+		<img id="logo" alt="" />
+		<div id="title"></div>
+		<div id="episode-label"></div>
+		<div id="meta"></div>
+		<div id="progress-wrap" style="display:none">
+			<div id="progress-bar"></div>
+		</div>
+		<div id="plot"></div>
+		<div id="buttons"></div>
+	</div>
+	<div id="carousel-dots"></div>
+	<div id="clickzone"></div>
+	<div id="empty" style="display:none">Nothing to show</div>
+
+	<!-- Update notification -->
+	<div id="update-toast" style="display:none" role="status" aria-live="polite">
+		<div id="update-toast-inner">
+			<svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+				fill="currentColor">
+				<path
+					d="M480-323.39 314.31-489.08l32.61-32.23 110.39 110V-780h45.38v368.69l110.39-110 32.61 32.23L480-323.39ZM237.69-180q-23.53 0-40.61-17.08T180-237.69V-363h45.39v125.31q0 4.61 3.84 8.46 3.85 3.84 8.46 3.84h484.62q4.61 0 8.46-3.84 3.84-3.85 3.84-8.46V-363H780v125.31q0 23.53-17.08 40.61T722.31-180H237.69Z" />
+			</svg>
+			<span id="update-text"></span>
+			<a id="update-link" href="#" target="_blank" rel="noopener noreferrer" id="update-link">View release</a>
+			<button id="update-dismiss" aria-label="Dismiss notification">
+				<svg xmlns="http://www.w3.org/2000/svg" height="14px" viewBox="0 -960 960 960" width="14px"
+					fill="currentColor">
+					<path
+						d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
+				</svg>
+			</button>
+		</div>
+	</div>
+
+	<script src="spotlight.js"></script>
+</body>
+
+</html>
